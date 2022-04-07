@@ -15,7 +15,7 @@ public class CadastroBD {
 		String url = "jdbc:mysql://localhost:3306/login?useTimezone=true&serverTimezone=UTC&useSSL=false";
 		String inserir ="use login;insert into tbl_usuario (login, senha, nome , email, sexo) values ("+"'"+login+"', " +"'"+senha+ "', " +"'" +nome +"', '"+ email +"', '"+sexo+"')";
 		try {
-			Connection conexao = DriverManager.getConnection(url, "root", "vertrigo");
+			Connection conexao = DriverManager.getConnection(url, "root", "");
 			PreparedStatement pesquisa = conexao.prepareStatement(inserir);
 			resultado = pesquisa.executeUpdate("insert into tbl_usuario (login, senha, nome, email, sexo) values ("+"'"+login+"', " +"'"+senha+ "', " +"'" +nome +"', '"+ email +"', '"+sexo+"')");
 

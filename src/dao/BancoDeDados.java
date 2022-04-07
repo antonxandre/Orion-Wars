@@ -12,7 +12,7 @@ public class BancoDeDados {
 	public Usuario usuario = new Usuario();
 	public String url = "jdbc:mysql://localhost/login?useTimezone=true&serverTimezone=UTC&useSSL=false";
 	public String loginBD = "root";
-	public String senhaBD = "vertrigo";
+	public String senhaBD = "";
 	public Connection conexao;
 	public PreparedStatement pesquisa;
 	public ResultSet resultado;
